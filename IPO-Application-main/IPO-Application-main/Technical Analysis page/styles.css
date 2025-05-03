@@ -1,0 +1,304 @@
+/* 🔹 Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Add padding to body to prevent content from hiding behind navbar */
+body {
+    padding-top: 80px; /* Space for sticky navbar */
+    background-color: #f8f9fa;
+}
+
+/* 🔹 Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* 🔹 Navbar container */
+.nav-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 🔹 Logo */
+.logo img {
+    height: 40px;
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* 🔹 Links inside navbar */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* 🔹 Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+/* 🔹 Dropdown Menu - Hidden by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 🔹 Show dropdown when hovering */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* 🔹 Sign-in and Sign-up buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sign-in {
+    color: black;
+    text-decoration: none;
+}
+
+.sign-up {
+    background: blue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* 🔹 "NEW" Badge for Live News */
+.new-badge {
+    background: blue;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* 🔹 Six-dot Menu Icon */
+.menu-dots {
+    display: grid;
+    grid-template-columns: repeat(3, 5px);
+    gap: 3px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* 🔹 Hero Section (Chats Patterns) */
+.hero-section {
+    padding: 30px 7%;
+    font-size: 36px;
+    font-weight: bold;
+    background: white;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Content container to align sidebar and content */
+.content-container {
+    display: flex;
+    padding: 30px 7%;
+    gap: 30px;
+    max-width: 1400px;  /* Added max-width for better layout control */
+    margin: 0 auto;     /* Center the container */
+}
+
+/* 🔹 Sidebar styling */
+.module-sidebar {
+    width: 320px;       /* Increased from 280px to 320px */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* 🔹 Sidebar heading */
+.module-sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Module list */
+.module-list {
+    list-style: none;
+    padding: 0;
+}
+
+.module-list li {
+    font-size: 16px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.module-list li:hover {
+    background-color: #f5f8ff;
+    color: #0057ff;
+}
+
+.module-list span {
+    color: #ff7f00;
+}
+
+/* 🔹 Buttons */
+.module-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.game-btn, .quiz-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-btn {
+    background: red;
+    color: white;
+}
+
+.quiz-btn {
+    background: navy;
+    color: white;
+}
+
+/* 🔹 Leaderboard link */
+.leaderboard-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+}
+
+.leaderboard-link:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Content Box Styling */
+.content-box {
+    flex: 0.8;        /* Changed from flex: 1 to flex: 0.8 to make it less wide */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0057ff;
+    margin-bottom: 20px;
+}
+
+/* Remove the fixed positioning from introduction section */
+#introduction-section {
+    width:900px;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #0057ff;
+}
+
+/* Content Box Paragraphs */
+.content-box p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 🔹 Divider */
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #0057ff;
+    margin: 10px 0 20px 0;
+}
+
+/* 🔹 Image Placeholder */
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Feedback Box */
+.feedback-box {
+    margin-top: 150px;
+    padding: 15px;
+    background: #f8f8f8;
+    text-align: center;
+    border-radius: 5px;
+    /* border: 1px solid #3109c2; */
+}
+
+/* Keep your existing responsive styles */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        padding: 20px 4%;
+    }
+    
+    .module-sidebar {
+        width: 100%;
+    }
+
+    .content-box {
+        flex: 1;
+    }
+}
+
+
+

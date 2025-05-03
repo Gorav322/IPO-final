@@ -1,0 +1,80 @@
+* {
+   font-family: "Poppins", sans-serif;
+}
+
+.navbar .nav-link {
+   color: #9A9A9A ;
+   font-size: 15px;
+ }
+
+
+.gradient-heading {
+  font-size: 64px;
+  font-weight: 800;
+  background: linear-gradient(to bottom, #AD00FF 0%, #4200FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.thumbs-up {
+  width: 50px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.custom-card li{
+  font-size: 20px;
+}
+
+
+.icon-card {
+  background-color: #fef6ef;
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.icon-card:nth-child(2) {
+  background-color: #f0f2fe;
+}
+.icon-card:nth-child(3) {
+  background-color: #ffecec;
+}
+.icon-card:hover {
+  transform: translateY(-4px);
+}
+
+.circle-badge {
+  background: linear-gradient(180deg, #9CF6E6 0%, #00D6B7 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  width: 238px;
+  height: 238px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.confetti-img {
+ left: 40%;
+  z-index: 1;
+}
+
+.screenshot{
+  border: 10px solid #EDEEF5;
+  border-radius: 30px;
+}

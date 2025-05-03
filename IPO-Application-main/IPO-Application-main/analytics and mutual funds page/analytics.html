@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluestock - Analytics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./img/logo.png" alt="Bluestock Logo" />
+          BLUESTOCK
+        </div>
+
+        <div class="nav-links">
+          <a href="#">IPO</a>
+          <a href="#">Community</a>
+          <a href="#">Products</a>
+          <a href="#">Brokers</a>
+          <a href="#">Live News <span class="new-tag">NEW</span></a>
+        </div>
+
+        <div class="auth-buttons">
+          <a href="#" class="signin-btn btn-style">Sign In</a>
+          <a href="#" class="signup-btn btn-style">Sign Up Now</a>
+          <i class="fa-solid fa-grip-vertical fa-2x grid-icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <nav class="bread-crumb">
+        <a href="#">Home</a>
+        <span class="separator">›</span>
+        <span class="current">Mutual Fund</span>
+      </nav>
+
+      <div class="stock-table-container">
+        <div class="stock-table-header">
+          <div class="header-title">NIFTY 50</div>
+          <div class="date-info">
+            Today Market has Closed as on 09 Jan 2024 16:00:00 IST
+          </div>
+          <div class="advances-declines">
+            <span class="advances">Advances - 30</span>
+            <span class="declines">Declines - 20</span>
+            <span class="unchanged">Unchanged - 0</span>
+          </div>
+        </div>
+
+        <table class="stock-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>OPEN</th>
+              <th>HIGH</th>
+              <th>LOW</th>
+              <th>PREV. CLOSE</th>
+              <th>LTE</th>
+              <th>CHNG</th>
+              <th>%CHNG</th>
+              <th>VOLUME (Shares)</th>
+              <th>VALUE (rs Crores)</th>
+              <th>52W H</th>
+              <th>52W L</th>
+              <th>30 D %CHNG</th>
+              <th>TODAY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td>Apple</td>
+              <td>21,456.00</td>
+              <td>21,465.00</td>
+              <td>21,455.00</td>
+              <td>21,455.00</td>
+              <td>21,459.00</td>
+              <td>73.98</td>
+              <td class="percentage-change positive">4.36</td>
+              <td>23,89,91,890</td>
+              <td>209.59</td>
+              <td>21,834.35</td>
+              <td>16,833.75</td>
+              <td>9.10</td>
+              <td><a href="#">graph</a></td>
+            </tr>
+            <!-- Repeat rows for more data -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluestock - Large Cap Mutual Funds</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./img/logo.png" alt="Bluestock Logo" />
+          BLUESTOCK
+        </div>
+
+        <div class="nav-links">
+          <a href="#">IPO</a>
+          <a href="#">Community</a>
+          <a href="#">Products</a>
+          <a href="#">Brokers</a>
+          <a href="#">Live News <span class="new-tag">NEW</span></a>
+        </div>
+
+        <div class="auth-buttons">
+          <a href="#" class="signin-btn btn-style">Sign In</a>
+          <a href="#" class="signup-btn btn-style">Sign Up Now</a>
+          <i class="fa-solid fa-grip-vertical fa-2x grid-icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <nav class="bread-crumb">
+        <a href="#">Home</a>
+        <span class="separator">›</span>
+        <span class="current">Mutual Fund</span>
+      </nav>
+
+      <section class="mutual-fund-container">
+        <div class="text-contaier">
+          <h1 class="mutual-fund-heading">Large Cap Mutual Funds</h1>
+          <p class="mutual-fund-text">
+            Large Cap funds invest in stocks of the top 100 companies in terms
+            of full market capitalization. They invest at least 80% of their
+            assets in large cap companies. These funds are relatively less
+            riskier than other market cap funds
+          </p>
+        </div>
+        <div class="mutual-img-container">
+          <div class="mutal-fund-img"></div>
+        </div>
+      </section>
+
+      <section class="overview-section">
+        <div class="mutual-fund-heading2">
+          <h2>Overview of Large Cap Mutual Funds</h2>
+        </div>
+
+        <div class="overview-container">
+          <div class="fund-card">
+            <h3>Fund Categories</h3>
+            <div class="fund-item">
+              <span>Equity</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="fund-item">
+              <span>Debt</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="fund-item">
+              <span>Hybrid</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="fund-item">
+              <span>Commodity</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="fund-item">
+              <span>Other</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div id="fundsContainer" class="funds-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/largecapData.js"></script>
+    <script src="scripts/fundCards.js"></script>
+  </body>
+</html>

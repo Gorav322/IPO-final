@@ -1,0 +1,473 @@
+/* Base Styles and Variables */
+:root {
+  /* Color Palette */
+  --primary-color: #4a6cff;
+  --secondary-color: #e67e22;
+  --text-color-light: #9a9a9a;
+  --text-color-dark: #1e1e1e;
+  --background-gray: #d9d9d9;
+
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-base: 62.5%;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-color-dark);
+}
+
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  height: 9.6rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 3.6rem;
+  color: var(--text-color-dark);
+  font-weight: var(--font-weight-bold);
+}
+
+.logo img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-weight: var(--font-weight-medium);
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links .new-tag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-style {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.signin-btn {
+  color: var(--text-color-light);
+}
+
+.signup-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: darken(#4a6cff, 10%);
+}
+
+.grid-icon {
+  color: #4a4a4a;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Breadcrumb Styles */
+.bread-crumb {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 2rem;
+  margin-left: 2.4rem;
+}
+
+.bread-crumb a {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
+}
+
+.bread-crumb .separator {
+  color: #808080;
+  font-weight: bold;
+}
+
+.bread-crumb .current {
+  color: #808080;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/* Large Cap Funds Section */
+.mutual-fund-container {
+  display: grid;
+  width: 100%;
+  height: 30rem;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--background-gray);
+  padding: 3.6rem 6.4rem;
+  margin-bottom: 2.4rem;
+  align-items: center;
+}
+
+.mutual-fund-heading {
+  font-size: 3.6rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.mutual-fund-text {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.mutual-img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mutal-fund-img {
+  width: 30rem;
+  height: 100%;
+  background-color: violet;
+}
+
+.mutual-fund-heading2 h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/* Overview Container */
+.overview-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0 6.4rem;
+  gap: 20px;
+}
+
+.fund-card {
+  width: 30rem;
+  padding: 2rem;
+  background-color: var(--background-gray);
+  border-radius: 9px;
+  height: 30rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.fund-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.fund-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.4rem 0;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.fund-item i {
+  color: #555;
+}
+
+/* Fund Card Styles */
+.card {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s ease;
+  margin-bottom: 3.2rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+}
+
+.card-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.card-header .logo {
+  width: 5rem;
+  height: 5rem;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.expand-btn:hover {
+  transform: scale(1.1);
+}
+
+.expand-btn svg {
+  stroke: #666;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-weight: var(--font-weight-bold);
+}
+
+.stat-value.green {
+  color: green;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.section-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  color: #666;
+}
+/* Analytics Section */
+.stock-table-container {
+  margin: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color-dark);
+  margin-bottom: 1.5rem;
+}
+
+.stock-table-header .header-title {
+  font-weight: var(--font-weight-regular);
+}
+
+.stock-table-header .date-info {
+  font-size: 1.4rem;
+  color: #999;
+  font-weight: var(--font-weight-regular);
+}
+
+.advances-declines {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.advances-declines .advances {
+  color: green;
+}
+
+.advances-declines .declines {
+  color: red;
+}
+
+.advances-declines .unchanged {
+  color: #808080;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.stock-table th,
+.stock-table td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
+  border: none;
+}
+
+.stock-table th {
+  background-color: #f4f4f4;
+  font-weight: var(--font-weight-regular);
+}
+
+.stock-table td {
+  color: #555;
+}
+
+.stock-table .highlight-row {
+  background-color: #e7f1ff;
+}
+
+.stock-table a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: var(--font-weight-medium);
+}
+
+.stock-table a:hover {
+  color: var(--secondary-color);
+}
+
+.stock-table .percentage-change {
+  font-weight: var(--font-weight-bold);
+}
+
+.stock-table .percentage-change.positive {
+  color: green;
+}
+
+.stock-table .percentage-change.negative {
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stock-table th,
+  .stock-table td {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .stock-table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stock-table-header .date-info {
+    margin-top: 0.5rem;
+  }
+
+  .advances-declines {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .stock-table {
+    font-size: 1.1rem;
+  }
+
+  .stock-table-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .stock-table a {
+    font-size: 1.2rem;
+  }
+}

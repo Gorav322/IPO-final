@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Bluestock</title>
+  <link rel="stylesheet" href="cont.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">BLUESTOCK</div>
+    <ul class="nav-links">
+      <li>IPO</li>
+      <li>Community</li>
+      <li>Products ▼</li>
+      <li>Brokers ▼</li>
+      <li>Live News <span class="new-tag">NEW</span></li>
+    </ul>
+    <div class="nav-buttons">
+      <button class="sign-in">Sign In</button>
+      <button class="sign-up">Sign Up Now</button>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    Home &gt; Contact Us
+  </div>
+
+  <section class="contact-section">
+    <h2>How Can We Help You ?</h2>
+
+    <div class="contact-cards">
+      <div class="card">
+        <p>Email us</p>
+        <small>One of our agents will respond at the earliest</small>
+        <a href="mailto:hello@bluestock.in" class="button">hello@bluestock.in →</a>
+      </div>
+
+      <div class="card">
+        <p>Chat us</p>
+        <small>Available from 8:00AM to 5:00PM</small>
+        <a href="#" class="button">Open Chat →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="community-section">
+    <h2>Interact With Us in Our Active Community</h2>
+    <p>Ask questions or discuss anything related to investing or trading<br>in the most active trading & investing community</p>
+    <button class="join-btn">JOIN NOW</button>
+
+    <div class="qr-popup">
+        <button class="close-btn">&times;</button>
+        <h2>Download Bluestock<br>Mobile App</h2>
+        <img src="../app-qr.png" alt="QR Code" class="qr-image" />
+        <div class="store-icons">
+          <img src="https://logos-world.net/wp-content/uploads/2020/12/Google-Play-icon-logo.png" alt="Google Play Store" class="store-icon" />
+          <img src="../contact us/apple-removebg-preview.png" alt="Apple App Store" class="store-icon" />
+        </div>
+      </div>
+    
+      <script>
+        const closeBtn = document.querySelector('.close-btn');
+        const qrPopup = document.querySelector('.qr-popup');
+    
+        closeBtn.addEventListener('click', () => {
+          qrPopup.style.display = 'none';
+        });
+      </script>
+  </section>
+
+</body>
+</html>
